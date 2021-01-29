@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/vientren"/>
+        <TextView
+            android:id="@+id/lichsu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="144dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Lịch Sử"
+            android:textColor="@color/black"
+            android:layout_marginLeft="160dp"/>
+        <fragment
+            android:name="com.example.apptruyen1.Fragment.Fragment_Theloaitoday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmenttheloai"
+            android:layout_below="@+id/lichsu"/>
+        <fragment
+            android:name="com.example.apptruyen1.Fragment.Fragment_Truyen_dang_gan_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmenttruyendangganday"
+            android:layout_below="@+id/fragmenttheloai"/>
+        <fragment
+            android:name="com.example.apptruyen1.Fragment.Fragment_Truyenyeuthich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmemttruyenyeuthich"
+            android:layout_below="@+id/fragmenttruyendangganday"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

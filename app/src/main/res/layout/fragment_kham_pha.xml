@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="@color/backgroundColor">
+    <LinearLayout
+
+        android:id="@id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/vientren"/>
+
+        <fragment
+            android:name="com.example.apptruyen1.Fragment.Fragment_Banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentbanner"/>
+        <fragment
+            android:name="com.example.apptruyen1.Fragment.Fragment_Theloaitoday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmenttheloai" />
+        <fragment
+            android:name="com.example.apptruyen1.Fragment.Fragment_Truyen_dang_gan_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmenttruyendangganday"/>
+        <fragment
+            android:name="com.example.apptruyen1.Fragment.Fragment_Truyenyeuthich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmemttruyenyeuthich" />
+
+    </LinearLayout>
+
+</ScrollView>

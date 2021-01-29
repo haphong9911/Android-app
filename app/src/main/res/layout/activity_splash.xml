@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainActivity"
+    android:background="@color/backgroundColor">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:src="@drawable/logo1"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="135dp"
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <TextView
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="12dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/logo"
+            android:id="@+id/webtruyen"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="TRUYỆN FULL"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

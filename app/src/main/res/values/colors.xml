@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorbutton">#FFBB86FC</color>
+    <color name="purple_500">#CAE8F2</color>
+    <color name="purple_700">#48C6D6</color>
+    <color name="purple_200">#CAE8F2</color>
+    <color name="tentruyen">#000000</color>
+    <color name="black">#FF000000</color>
+    <color name="tentacgia">#871271</color>
+    <color name="backgroundColor">#CAE8F2</color>
+    <color name="tentheloai">#DA2619</color>
+</resources>

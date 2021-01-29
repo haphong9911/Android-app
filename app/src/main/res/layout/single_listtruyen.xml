@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:id="@+id/imgtruyen"
+        android:layout_margin="3dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Tên truyện"
+        android:layout_toRightOf="@+id/imgtruyen"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txttentruyen"
+        android:textColor="@color/tentruyen"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Tác giả"
+        android:layout_below="@+id/txttentruyen"
+        android:layout_toRightOf="@+id/imgtruyen"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txttacgia"
+        android:textColor="@color/tentacgia"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Số chương"
+        android:layout_below="@+id/txttacgia"
+        android:layout_toRightOf="@+id/imgtruyen"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txttheloai"
+        android:textColor="@color/tentheloai"
+        />
+
+</RelativeLayout>

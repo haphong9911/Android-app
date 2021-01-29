@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {compileSdkVersion 30
+    buildToolsVersion '29.0.2'
+
+    defaultConfig {
+        applicationId "com.example.apptruyen1"
+        minSdkVersion 28
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'org.djodjo.tarator:support-v4:0.1.6'
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:29.0.2'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    dependencies {
+        implementation 'me.relex:circleindicator:1.2.2@aar'
+    }
+    dependencies {
+        implementation 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
+    }
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    }
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'org.sufficientlysecure:html-textview:3.2'
+
+
+}
