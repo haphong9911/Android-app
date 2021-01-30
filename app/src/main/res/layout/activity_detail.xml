@@ -47,7 +47,7 @@
                 android:id="@+id/txttacgiadetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tác giả:"
+                android:text="Tác giả"
                 android:textColor="#473B38"
                 android:textSize="15sp" />
 
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Trạng thái"
-                android:textColor="#473B38"
+                android:textColor="#f20"
                 android:textSize="15sp" />
 
             <TextView
@@ -109,7 +109,6 @@
                 android:id="@+id/txtgioithieudetail"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:text=""
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="5dp"/>
         </ScrollView>
@@ -117,13 +116,66 @@
             android:layout_marginTop="5dp"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:background="#ED0D15"
+            android:background="#B53F43"
+            android:textColor="@color/tentacgia"
             android:text="Đọc truyện"
             android:layout_marginRight="10dp"
             android:id="@+id/btndoctruyen"
             android:layout_gravity="end"
             />
     </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lntruyen"
+        android:background="@color/backgroundColor"
+        android:id="@+id/chuongtruyen">
 
+        <TextView
+            android:layout_marginLeft="110dp"
+            android:textColor="#000"
+            android:text="Danh sách chương"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000"
+            android:text="Giới thiệu:"
+            android:textSize="23sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000"
+            android:text="Giới thiệu:"
+            android:textSize="23sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000"
+            android:text="Giới thiệu:"
+            android:textSize="23sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000"
+            android:text="Giới thiệu:"
+            android:textSize="23sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000"
+            android:text="Giới thiệu:"
+            android:textSize="23sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </RelativeLayout>

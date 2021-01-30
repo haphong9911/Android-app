@@ -12,9 +12,70 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textviewtitlethuvien"/>
+    <RelativeLayout
+        android:id="@+id/relativedoctruyenn"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewtitlethuvien">
+
+
+        <ImageView
+            android:src="@drawable/daotinh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imgtruyen"
+            android:layout_margin="3dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Đạo Tình"
+            android:layout_toRightOf="@+id/imgtruyen"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txttentruyen1"
+            android:textColor="@color/tentruyen"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Chu Ngọc"
+            android:layout_below="@+id/txttentruyen1"
+            android:layout_toRightOf="@+id/imgtruyen"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txttacgia"
+            android:textColor="@color/tentacgia"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Số chương: 3"
+            android:layout_below="@+id/txttacgia"
+            android:layout_toRightOf="@+id/imgtruyen"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txttheloai"
+            android:textColor="@color/tentheloai"
+            />
+
+    </RelativeLayout>
 
     <ListView
-        android:layout_below="@+id/textviewtitlethuvien"
+        android:layout_below="@+id/relativedoctruyenn"
         android:id="@+id/listviewthuvien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

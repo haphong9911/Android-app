@@ -11,14 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Apptruyen1">
-        <activity android:name=".Activity.TruyenganActivity"></activity>
+        <activity android:name=".Activity.DoctruyennActivity"></activity>
+        <activity android:name=".Activity.ChitiettruyenActivity" />
+        <activity android:name=".Activity.dangki" />
+        <activity android:name=".Activity.TruyenganActivity" />
         <activity android:name=".Activity.TruyenDetail" />
         <activity android:name=".Activity.DoctruyenActivity" />
         <activity android:name=".Activity.Danhsachtruyendangganday" />
         <activity android:name=".Activity.DanhsachcactheloaiActivity" />
         <activity android:name=".Activity.Danhsachtheloai" />
         <activity android:name=".Activity.DanhsachtruyenActivity" />
-        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.MainActivity" />
         <activity
             android:name=".Activity.SplashActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">

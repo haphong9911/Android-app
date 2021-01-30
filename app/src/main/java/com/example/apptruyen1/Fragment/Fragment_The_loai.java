@@ -9,13 +9,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.apptruyen.Service.APIService;
 import com.example.apptruyen.Service.Dataservice;
+import com.example.apptruyen1.Activity.ChitiettruyenActivity;
+import com.example.apptruyen1.Activity.LoginActivity;
+import com.example.apptruyen1.Activity.MainActivity;
 import com.example.apptruyen1.Activity.TruyenDetailActivity;
+import com.example.apptruyen1.Activity.TruyenganActivity;
 import com.example.apptruyen1.Adapter.TheloaiAdapter;
 import com.example.apptruyen1.Model.Truyendetail;
 import com.example.apptruyen1.R;
@@ -30,8 +38,10 @@ import retrofit2.Response;
 import static com.example.apptruyen1.R.layout.fragment_the_loai;
 
 public class Fragment_The_loai extends Fragment {
+    RelativeLayout relativeLayout;
     ListView listtruyen;
     TheloaiAdapter theloaiAdapter;
+    TextView textView;
     ArrayList<Truyendetail> thuvienArrayList;
     View view;
     @Nullable
@@ -39,10 +49,20 @@ public class Fragment_The_loai extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_theloai,container,false);
         listtruyen=(ListView) view.findViewById(R.id.listviewthuvien);
+        textView = view.findViewById(R.id.txttentruyen1);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ChitiettruyenActivity.class);
+                startActivity(intent);
+            }
+        });
         GetData();
         return view;
 
     }
+
+
 
     private void GetData() {
         Dataservice dataservice = APIService.getService();

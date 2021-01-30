@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/nav_timkiem"
         android:icon="@drawable/timkiem1"
-        android:title="Home"/>
+        android:title="Tìm kiếm"/>
 
     <item android:id="@+id/nav_lichsu"
         android:icon="@drawable/time"
-        android:title="Thể loại"/>
+        android:title="Lịch sử"/>
 
     <item android:id="@+id/nav_khampha"
         android:icon="@drawable/home"
-        android:title="Thông báo"/>
+        android:title="Khám phá"/>
 
     <item android:id="@+id/nav_theloai"
         android:icon="@drawable/category"
-        android:title="Tài khoản"/>
+        android:title="Thư Viện"/>
 
     <item android:id="@+id/nav_menu"
         android:icon="@drawable/menu"
-        android:title="Thể loại"/>
+        android:title="Menu"/>
 </menu>

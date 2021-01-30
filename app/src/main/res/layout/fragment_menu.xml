@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/backgroundColor">
     <RelativeLayout
+        android:id="@+id/relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
         <include layout="@layout/vientren"/>
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="144dp"
@@ -20,5 +22,152 @@ android:background="@color/backgroundColor">
             android:textColor="@color/black"
             android:layout_marginLeft="180dp"/>
     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_below="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:src="@drawable/logo1"
+            android:id="@+id/anhmenu"
+            android:layout_margin="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/chaomung"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20sp"
+            android:textSize="20dp"
+            android:text="Trần Hà Phong"
+            android:layout_toRightOf="@+id/anhmenu"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/truyenfull"
+            android:textStyle="bold"
+            android:textColor="@color/tentheloai"
+            android:fontFamily="@font/allura"
+            android:layout_marginLeft="85dp"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:text="TruyenFull"
+            android:layout_below="@+id/chaomung"
+            android:layout_toRightOf="@+id/anhmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/dangkyyy"
+            android:layout_below="@+id/truyenfull"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="5sp"
+            android:textSize="20dp"
+            android:text="Đăng xuất"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/anhmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_below="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/danhsachtruyen"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="DANH SÁCH TRUYỆN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_below="@+id/danhsachtruyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/time1"
+                android:src="@drawable/time"
+                android:layout_margin="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_margin="20dp"
+                    android:textSize="20dp"
+                    android:text="Truyện đọc gần đây"
+                    android:layout_toRightOf="@+id/time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_toRightOf="@+id/time1"
+                    android:src="@drawable/inright"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/time2"
+                    android:src="@drawable/iconlove"
+                    android:layout_margin="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_margin="20dp"
+                    android:textSize="20dp"
+                    android:text="Truyện yêu thích"
+                    android:layout_toRightOf="@+id/time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_toRightOf="@+id/time2"
+                    android:src="@drawable/inright"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/time3"
+                    android:src="@drawable/download"
+                    android:layout_margin="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_margin="20dp"
+                    android:textSize="20dp"
+                    android:text="Truyện đã tải"
+                    android:layout_toRightOf="@+id/time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_toRightOf="@+id/time3"
+                    android:src="@drawable/inright"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
